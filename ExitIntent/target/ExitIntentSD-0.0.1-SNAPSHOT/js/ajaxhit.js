@@ -1,19 +1,40 @@
 /**
  * Dinesh
  */
-$(document).ready(function(){
 
-	$("button#111").click(function(){
-		var a = {
-				"token" : "mykdf",
-				"totalTime" : "45",
-				"pageTime" : "12",
-				"mouseHover" : "2",
-				"initScore" : "421",
-				"pageVisited" : "2"
-			}
-	    $.ajax({url: "http://exit.intent.com:9090/getIntent",data:a, type : "POST", success: function(result){
-	        $("#div1").html(result);
-	    }});
-	});	
+var b=true;
+
+$(document).ready(function(){
+	var time=new Date().getTime();
+		setTimeout(function(b){b=true;sendAjax(b);},18000);
+		function sendAjax(b){
+				/*var a = {
+						"token" : "mykdf",
+						"totalTime" : "45",
+						"pageTime" : "12",
+						"mouseHover" : "2",
+						"initScore" : "421",
+						"pageVisited" : "2"
+					}*/
+			
+			pdpTimeDataM();
+			
+			var a ={myData:JSON.parse(window.localStorage.getItem("myData")),currUrl:window.location.pathname}
+				$.ajax({
+					headers: { 
+						'Content-Type': 'application/json' 
+					},
+					url: "http://localhost:9090/getIntent",
+					data:JSON.stringify(a),
+					method  : "POST",
+					success: function(result){
+						//alert(result);
+						document.cookie = "userscore="+result;
+					}
+				});
+				
+				if(b){
+					setInterval(function(b){b=false;sendAjax(a);},600000);
+				}
+		}
 });

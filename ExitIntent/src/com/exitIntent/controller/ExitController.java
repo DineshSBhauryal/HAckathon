@@ -17,9 +17,9 @@ public class ExitController {
  
 	@RequestMapping("/welcome")
 	public ModelAndView helloWorld() {
- System.out.println(ScoreCalculate.calculateScore());
+// System.out.println(ScoreCalculate.calculateScore());
  
-		String message = ScoreCalculate.calculateScore() ;
+		String message = "0";//ScoreCalculate.calculateScore() ;
 		
 				return new ModelAndView("welcome", "message", message);
 	}

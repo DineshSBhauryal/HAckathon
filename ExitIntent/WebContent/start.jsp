@@ -8,6 +8,7 @@ body {
 </style>
 </head>
 <body>
+<script type="text/javascript" src="js/data.js"></script>
 	<br>
 	<div style="text-align:center">
 		<h2>

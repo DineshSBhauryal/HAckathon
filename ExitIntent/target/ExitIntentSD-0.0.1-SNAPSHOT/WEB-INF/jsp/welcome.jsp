@@ -9,6 +9,7 @@
 </head>
 <body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/ajaxhit.js"></script>
     
 <button id="111"> Button</button>
