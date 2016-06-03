@@ -5,7 +5,9 @@
 var pdpTimeDataM;
 //localStorage.removeItem("myData");
 
+
 (function () {
+	//document.cookie="eid=\"dineshbhauryal@gmail.com\"";
     var Const = {
         MY_DATA: "myData",
         ALL_PAGE_VIEW: "allPageView",

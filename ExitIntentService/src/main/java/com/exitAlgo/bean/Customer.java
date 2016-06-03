@@ -5,8 +5,19 @@ public class Customer
     private MyData myData;
 
     private String currUrl;
+    
+    private String user="root" ;
 
-    public MyData getMyData ()
+    public String getUser() {
+    	if(user.length()<4){user="root";}
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public MyData getMyData ()
     {
         return myData;
     }
