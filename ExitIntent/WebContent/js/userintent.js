@@ -4,7 +4,7 @@ $(window).on("keydown", function(e) {
 	var score = window.sessionStorage.getItem("userscore");
 	if (e.keyCode == 18 || e.keyCode == 9) {
 
-		if (score > 0.8 && !isShown) {
+		if (score > 0.4 && !isShown) {
 
 			overlay1();
 			localStorage.removeItem("myData");
@@ -34,7 +34,7 @@ addEvent(document, "mouseout", function(e) {
 	var score = window.sessionStorage.getItem("userscore");
 	if (!from || from.nodeName == "HTML") {
 
-		if (score > 0.8 && !isShown) {
+		if (score > 0.4 && !isShown) {
 			overlay1();
 			localStorage.removeItem("myData");
 			sessionStorage.removeItem("userscore");
