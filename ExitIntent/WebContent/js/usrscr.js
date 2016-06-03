@@ -32,7 +32,7 @@ $(document).ready(function() {
 		if(run){
 		sendAjax(b);
 	}
-	}, 180000);
+	}, 30000);
 
 	if (b) {
 		setInterval(function(b) {

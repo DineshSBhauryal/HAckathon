@@ -129,8 +129,8 @@ var pdpTimeDataM;
             if (!pdpDataObj[Const.TIME_DATA]) {
                 pdpDataObj[Const.TIME_DATA] = 0;
             }
-            pdpDataObj[Const.TIME_DATA] = pdpTimeEnd - pdpTimeStart;
-
+            pdpDataObj[Const.TIME_DATA] += pdpTimeEnd - pdpTimeStart;
+            pdpTimeStart=pdpTimeEnd;
             pdpData[index] = pdpDataObj;
         }
 

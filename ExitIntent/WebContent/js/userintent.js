@@ -34,7 +34,7 @@ addEvent(document, "mouseout", function(e) {
 	var score = window.sessionStorage.getItem("userscore");
 	if (!from || from.nodeName == "HTML") {
 
-		if (score > 0.4 && !isShown) {
+		if (score > 0.35 && !isShown) {
 			overlay1();
 			localStorage.removeItem("myData");
 			sessionStorage.removeItem("userscore");
