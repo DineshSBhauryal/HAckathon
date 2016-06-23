@@ -1,8 +1,12 @@
-com\exitAlgo\bean\MyData.class
-com\exitAlgo\bean\CustomerBehave.class
 com\exitAlgo\bean\PdpData.class
 com\exitAlgo\controller\ExitController.class
+com\exitAlgo\history\Userhistory.class
+com\exitAlgo\history\HistoryBean.class
+com\exitAlgo\setData\SetBeanData.class
+com\exitAlgo\bean\MyData.class
+com\exitAlgo\bean\CustomerBehave.class
 com\exitAlgo\bean\ExitParam.class
 com\exitAlgo\bean\Customer.class
 com\exitAlgo\controller\Application.class
-com\exitAlgo\setData\SetBeanData.class
+com\exitAlgo\history\CustomerMaster.class
+com\exitAlgo\history\UserhistoryRepository.class

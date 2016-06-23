@@ -31,7 +31,7 @@
         <artifactId>jstl</artifactId>
     </dependency>
     
-   <!--  <dependency>
+    <dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
 			
@@ -46,14 +46,18 @@
 			<artifactId>commons-dbcp</artifactId>
 			
 		</dependency>
-		
+		<!-- -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			 <scope>runtime</scope>
-		</dependency> -->
+		</dependency>
     
-    
+    <dependency>
+  <groupId>com.microsoft.sqlserver</groupId>
+  <artifactId>sqljdbc4</artifactId>
+  <version>4.0</version>
+</dependency>
     </dependencies>
 
     <properties>
